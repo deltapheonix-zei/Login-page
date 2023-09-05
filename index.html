@@ -14,35 +14,43 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="random_bg">
-    <section>
-      <div class="form-box">
-        <div class="form-value">
-          <form action="">
-            <h2>Login</h2>
-            <div class="inputbox">
-              <span class="material-symbols-outlined"> mail </span>
-              <input type="email" required />
-              <label for="">Email</label>
+  <body onload="myFun()" class="flexible2">
+
+    <div id="loading"></div>
+    
+    <div class="random-bg">
+      <section >
+        <div class="form-box">
+          <div class="form-value">
+            <form action="">
+              <h2>Login</h2>
+              <div class="inputbox">
+                <span class="material-symbols-outlined"> mail </span>
+                <input type="email" required />
+                <label for="">Email</label>
+              </div>
+              <div class="inputbox">
+                <span class="material-symbols-outlined"> lock </span>
+                <input type="password" required />
+                <label for="">Password</label>
+              </div>
+              <div class="forget">
+                <label for=""
+                  ><input type="checkbox" />Remember Me
+                  <a class="forgetpas" href="#">Forget Password?</a>
+                </label>
+              </div>
+              <div class="btn-log">
+              <button>Log in</button>
             </div>
-            <div class="inputbox">
-              <span class="material-symbols-outlined"> lock </span>
-              <input type="password" required />
-              <label for="">Password</label>
-            </div>
-            <div class="forget">
-              <label for=""
-                ><input type="checkbox" />Remember Me
-                <a href="#">Forget Password</a>
-              </label>
-            </div>
-            <button>Log in</button>
-            <div class="register">
-              <p>Don't have a account <a href="#">Register</a></p>
-            </div>
-          </form>
+              <div class="register">
+                <p>Don't have an account? <a href="#"> Register now!</a></p>
+              </div>
+            </form>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
+    <script src="random.js"></script>
   </body>
 </html>
